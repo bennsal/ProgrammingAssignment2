@@ -8,7 +8,7 @@
 
 ## Write a short comment describing this function
 
-        # This function generates a list of four fuctions that are used to get
+        # makeCacheMatrix generates a list of four fuctions that are used to get
         # and set the inverse matrix in the cacheSolve function below
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -27,7 +27,11 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-        # This fuction returns a matrix that is the inverse of x.  Firstly the function checks
+        # cacheSolve returns a matrix that is the inverse of x.  Firstly the 
+        # function checks for a previously solved inverse and returns it if 
+        # present witht the notice "getting cache data",
+        # if null is returned instead then the inverse is calculated 
+        # saved in a cache and returned.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
